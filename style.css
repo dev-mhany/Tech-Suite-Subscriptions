@@ -2,7 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #aee4ee;
+    background-image: url('Location_dot_black.svg.png'); /* Replace this with the path to your image */
+    background-size: 3px; /* This makes sure your image covers the whole page */
+    background-position: center; /* This centers the image on the page */
+    background-repeat: repeat; /* This prevents the image from repeating */
+
   }
   
   .gallery {
@@ -90,5 +95,8 @@ body {
     font-size: 30px;
   }
   p {
+    text-align: center;
+  }
+  h1 {
     text-align: center;
   }
