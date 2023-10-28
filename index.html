@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Viewer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="gallery">
+  <div class="image-container" onclick="openImage('netflix-logo.webp', 'اشتراك نتفليكس شهري بسعر $$')">
+    <img src="netflix-logo.webp" alt="netflix-logo">
+  </div>
+  <div class="image-container" onclick="openImage('CanvaPro.webp', 'إشتراك كانفا برو سنوي بسعر $$')">
+    <img src="CanvaPro.webp" alt="canva-logo">
+  </div>
+  <!-- Add more images as needed -->
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Image" style="max-width: 100%; height: auto;">
+    <p id="modalDescription"></p>
+    <div class="button-container">
+        <button id="sendMessageButton" class="whatsapp-button">
+          <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </button>
+      </div>
+      
+      
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
