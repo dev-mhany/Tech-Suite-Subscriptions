@@ -11,8 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="background" style="background-image: url(https://static.frontendmasters.com/assets/fm/med/learn/background-intermediate.jpg)"></div>
+<div>
+    <div class="background" style="background-image: url(Abstract\ Blue\ Phone\ Wallpaper.png)"></div>
     <div class="grid"></div>
 <h1>Tech Suite Subscriptions</h1>
 <div class="gallery">
@@ -44,5 +44,35 @@
     </div>  
   </div>
 <script src="script.js"></script>
+
+<css-doodle> 
+	:doodle {
+		@grid: 1x3 / 100vmax;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+	}
+
+	@size: 100% 150%;
+	position: absolute;
+  
+	background: @m(100, (
+		linear-gradient(transparent, @p(
+      #FFFDE1@repeat(2, @p([0-9a-f])), 
+      #FB3569@repeat(2, @p([0-9a-f])) 
+    ))
+		@r(0%, 100%) @r(0%, 100%) /
+		@r(1px) @r(23vmin)
+		no-repeat
+	));
+
+	
+	animation: f 15s linear calc(-15s / @size() * @i()) infinite;
+	@keyframes f {
+		from { transform: translateY(-100%) }
+		to { transform: translateY(100%) }
+	}
+</css-doodle>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.6.1/css-doodle.min.js'></script>
 </body>
 </html>

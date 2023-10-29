@@ -1,7 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f000f0;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  /* To prevent any potential scrolling */
 }
     .background {
     z-index: -1;
@@ -14,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.grid {
+/*.grid {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAQAAAAD+Fb1AAAAEklEQVR42mNg+M8AAhASDUClAEXeA/1LlYqzAAAAAElFTkSuQmCC);
     position: absolute;
     opacity: 0.3;
@@ -22,6 +28,17 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}*/
+css-doodle {
+  display: block;   /* To make sure it takes the full width */
+  height: 100%;     /* To fit the viewport height */
+}
+.doodle-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
   .gallery {
@@ -118,4 +135,5 @@ body {
     font-size: 50px;
     text-shadow: 2px 2px 4px #000000;
     position: relative;
+    z-index: 1;
   }
