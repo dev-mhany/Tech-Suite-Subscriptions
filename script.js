@@ -34,7 +34,7 @@ function openImage(src, description) {
   }
   
   function sendMessage(imageSrc, description) {
-    const phoneNumber = '+201159871985';
+    const phoneNumber = '+201113151054';
     const message = `هاي, انا مهتم بالمنتج دا! \nوصف الإشتراك: ${description}`;
     const whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
     window.open(whatsappUrl, '_blank');
